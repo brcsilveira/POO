@@ -8,7 +8,7 @@ package meiosdetransporte.meiosdetransporte;
  *
  * @author T-Gamer
  */
-public class CadastroDeVeiculos extends Veiculo{
+public class CadastroDeVeiculos {
     private Veiculo[] listaDeVeiculos;
     private int cont;
     
@@ -34,10 +34,15 @@ public class CadastroDeVeiculos extends Veiculo{
     public String retornaItem (int posicao){
         int index = posicao - 1;
         
-        if(this.listaDeVeiculos[index] == null)
+        if(index > listaDeVeiculos.length){
             return null;
+        }
+        
+        if((this.listaDeVeiculos[index] == null)){
+            return null;
+        }
         else{
-            return ("Veiculo da posição " + posicao + ": " + listaDeVeiculos[index]);
+            return "VEÍCULO DA POSIÇÃO " + posicao + ".\n" + this.listaDeVeiculos[index];
         }
     }
     
@@ -47,14 +52,23 @@ public class CadastroDeVeiculos extends Veiculo{
     
     public void imprimir(){
         for(int i = 0; i < tamanho(); i++){
-            if (this.listaDeVeiculos != null){
-                System.out.println(this.listaDeVeiculos[i]);
+            if (this.listaDeVeiculos[i] != null){
+                System.out.print(this.listaDeVeiculos[i] + "\n");
             }
             else{
                 System.out.println("NENHUM VEICULO CADASTRADO!");
             }
         }
     }
+    
+    /*for(int x = 0; x < numeroDeLembretes(); x++){
+            if (this.v1[x] != null){
+                System.out.print(this.v1[x] + "\n");
+            }
+            else{
+                System.out.println("NENHUM LEMBRETE INSERIDO.");
+            }
+        }*/
     
     public void ordenar(){
         

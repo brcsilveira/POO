@@ -21,7 +21,7 @@ public class Veiculo {
         this.velocidade = 0;
     }
     
-    public void imprimir(){
+    public void imprimirInformacoes(){
         System.out.println("+-----------------------------------------------+");
         System.out.println("Marca: " + marca + " | Modelo: " + modelo);
         System.out.println("Quantidade de rodas: " + qtdRodas);
@@ -35,5 +35,17 @@ public class Veiculo {
     
     public void frear(int valor){
         this.velocidade -= valor;
+    }
+    
+    void imprimirVeiculo(){
+        System.out.println(this);
+    }
+    
+    @Override
+	public String toString() {
+        return
+        	"Marca: " + this.marca + "\n" +
+        	"Modelo: " + this.modelo + "\n" +
+        	"Quantidade de rodas: " + this.qtdRodas + "\n";
     }
 }

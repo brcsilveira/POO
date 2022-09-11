@@ -16,8 +16,8 @@ public class Carro extends Automovel{
         this.qtdPortas = qtdPortas;
     }
     
-    public void imprimir(){
-        super.imprimir();
+    public void imprimirInformacoes(){
+        super.imprimirInformacoes();
         System.out.println("Quantidade de portas: " + qtdPortas);
         System.out.println("+-----------------------------------------------+");
     }

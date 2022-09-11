@@ -23,8 +23,8 @@ public class Bicicleta extends Veiculo {
         Serve para a linha 28;
     */
     
-    public void imprimir(){
-        super.imprimir();
+    public void imprimirInformacoes(){
+        super.imprimirInformacoes();
         System.out.println("Numero de marchas: " + numeroDeMarchas);
         System.out.println(bagageiro? "Tem bagageiro" : "Não tem bagageiro");
         System.out.println("+-----------------------------------------------+");

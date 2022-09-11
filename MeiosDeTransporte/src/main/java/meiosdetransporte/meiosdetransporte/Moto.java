@@ -16,8 +16,8 @@ public class Moto extends Automovel{
         this.partidaEletrica = partidaEletrica;
     }
     
-    public void imprimir(){
-        super.imprimir();
+    public void imprimirInformacoes(){
+        super.imprimirInformacoes();
         System.out.println(partidaEletrica? "Tem partida elétrica" : "Não tem partida elétrica");
         System.out.println("+-----------------------------------------------+");
     }

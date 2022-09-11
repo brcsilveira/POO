@@ -16,8 +16,8 @@ public class Automovel extends Veiculo {
         this.potenciaDoMotor = potenciaDoMotor;
     }
     
-    public void imprimir(){
-        super.imprimir();
+    public void imprimirInformacoes(){
+        super.imprimirInformacoes();
         System.out.println("Potência do motor: " + potenciaDoMotor);
         System.out.println("+-----------------------------------------------+");
     }

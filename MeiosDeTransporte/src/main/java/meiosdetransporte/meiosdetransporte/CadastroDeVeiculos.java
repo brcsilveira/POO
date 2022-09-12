@@ -4,6 +4,8 @@
  */
 package meiosdetransporte.meiosdetransporte;
 
+import java.util.Arrays;
+
 /**
  *
  * @author T-Gamer
@@ -47,7 +49,7 @@ public class CadastroDeVeiculos {
     }
     
     public int tamanho(){
-        return cont;
+        return this.cont;
     }
     
     public void imprimir(){
@@ -61,16 +63,18 @@ public class CadastroDeVeiculos {
         }
     }
     
-    /*for(int x = 0; x < numeroDeLembretes(); x++){
-            if (this.v1[x] != null){
-                System.out.print(this.v1[x] + "\n");
-            }
-            else{
-                System.out.println("NENHUM LEMBRETE INSERIDO.");
-            }
-        }*/
-    
     public void ordenar(){
+        Veiculo temp;
         
+        for(int x = 0; x < tamanho() - 1; x++)
+        {
+            for(int y = x + 1; y < tamanho(); y++){
+                if ((this.listaDeVeiculos[x].getModelo().compareTo(this.listaDeVeiculos[y].getModelo())) > 0){ //listaDeVeiculos[x] é maior que listaDeVeiculos[y]
+                    temp = listaDeVeiculos[x];
+                    this.listaDeVeiculos[x] = listaDeVeiculos[y];
+                    this.listaDeVeiculos[y] = temp;  
+                }
+            }
+        }
     }
 }

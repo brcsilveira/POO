@@ -41,6 +41,14 @@ public class Veiculo {
         System.out.println(this);
     }
     
+    public void setModelo(String modelo){
+        this.modelo = modelo;
+    }
+    
+    public String getModelo(){
+        return this.modelo;
+    }
+    
     @Override
 	public String toString() {
         return

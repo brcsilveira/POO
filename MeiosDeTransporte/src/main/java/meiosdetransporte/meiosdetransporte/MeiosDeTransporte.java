@@ -56,5 +56,8 @@ public class MeiosDeTransporte {
         vei.imprimir();
         System.out.println("fim do terceiro imprimir");
         System.out.println(vei.retornaItem(50));
+        System.out.println("Teste de ordenação:");
+        vei.ordenar();
+        vei.imprimir();
     }
 }

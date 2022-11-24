@@ -6,7 +6,7 @@ package game;
 
 /**
  *
- * @author T-Gamer
+ * @author Bruno Chim Silveira
  */
 public class Empurrar extends Passivo{
     @Override

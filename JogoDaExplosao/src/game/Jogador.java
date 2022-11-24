@@ -24,6 +24,11 @@ public class Jogador {
         this.posicaoX = x;
         this.posicaoY = y;
     }
+    
+    public void listaPoderes(){
+        System.out.println("Poder Passivo: " + getPoderPassivo());
+        System.out.println("Pode Instantâneo: " + getPoderInstantaneo());
+    }
 
     public int getPosicaoX() {
         return posicaoX;

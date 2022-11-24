@@ -9,6 +9,10 @@ package game;
  * @author Bruno Chim Silveira
  */
 public class Imobilizar extends Instantaneo{
+    public Imobilizar(String nome){
+        this.nome = nome;
+    }
+    
     
     @Override
     public String toString() {

@@ -9,6 +9,10 @@ package game;
  * @author Bruno Chim Silveira
  */
 public class Velocidade extends Instantaneo{
+    public Velocidade(String nome){
+        this.nome = nome;
+    }
+    
   @Override
     public String toString() {
         return "velocidade";

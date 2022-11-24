@@ -9,6 +9,10 @@ package game;
  * @author Bruno Chim Silveira
  */
 public class AsasDeIcaro extends Passivo{
+    
+    public AsasDeIcaro(String nome){
+        this.nome = nome;
+    }
     @Override
     public String toString() {
         return "AsasDeIcaro";
